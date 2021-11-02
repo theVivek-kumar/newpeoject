@@ -3,14 +3,18 @@ const btn= document.querySelector('#btn');
 const output = document.querySelector('.output');
 function onclick(){
     let name = prompt("enter the name of stuedent");
-     if(name>=15&&name<=20)
-     {
-         console.log("yes");
+    switch (name){
+        case 'apple':
+        console.log("120rs");
+        break;
+        case 'banana':
+            console.log("40rs");
+            break;
+            case 'cat':
+                console.log("345");
+                break;
 
-     }
-     else{
-         console.log("no");
-     }
-    
-}
+
+    }
+
 btn.addEventListener ('click',onclick);
