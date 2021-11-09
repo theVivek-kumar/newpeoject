@@ -2,19 +2,19 @@ const input = document.querySelector('.input');
 const btn= document.querySelector('#btn');
 const output = document.querySelector('.output');
 function onclick(){
-    let name = prompt("enter the name of stuedent");
-    switch (name){
-        case 'apple':
-        console.log("120rs");
-        break;
-        case 'banana':
-            console.log("40rs");
-            break;
-            case 'cat':
-                console.log("345");
-                break;
-
-
+    let number = (Number(input.value));
+    
+    if(number%2===0){
+        console.log("even");
+        output.innerHTML="number is even";
+        console.log(typeof number);
     }
+    else{
+        console.log("odd");
+        output.innerHTML="number is odd"
+    }
+}
 
+
+  
 btn.addEventListener ('click',onclick);
