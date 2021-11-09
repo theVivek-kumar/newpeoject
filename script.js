@@ -1,20 +1,15 @@
-const input = document.querySelector('.input');
+const input = document.querySelectorAll('.input');
 const btn= document.querySelector('#btn');
 const output = document.querySelector('.output');
-function onclick(){
-    let number = (Number(input.value));
-    
-    if(number%2===0){
-        console.log("even");
-        output.innerHTML="number is even";
-        console.log(typeof number);
-    }
-    else{
-        console.log("odd");
-        output.innerHTML="number is odd"
-    }
+function AreaOfTriangle(height,base){
+    let  area = 1/2 *Number(input[0].value)*Number(input[1].value);
+    console.log(typeof area);
+    output.innerHTML="area of triangle is"+area;
+  
 }
 
+    
+   
 
-  
-btn.addEventListener ('click',onclick);
+ 
+btn.addEventListener ('click',AreaOfTriangle);
